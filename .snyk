@@ -1,0 +1,17 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.21.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hoek:20180212':
+    - parse-server-push-adapter > node-gcm > request > hawk > hoek:
+        patched: '2021-09-01T05:15:05.102Z'
+    - parse-server-push-adapter > node-gcm > request > hawk > boom > hoek:
+        patched: '2021-09-01T05:15:05.102Z'
+    - parse-server-push-adapter > node-gcm > request > hawk > sntp > hoek:
+        patched: '2021-09-01T05:15:05.102Z'
+    - parse-server-push-adapter > node-gcm > request > hawk > cryptiles > boom > hoek:
+        patched: '2021-09-01T05:15:05.102Z'
+  'npm:lodash:20180130':
+    - parse-server-push-adapter > node-gcm > lodash:
+        patched: '2021-09-01T05:15:05.102Z'
